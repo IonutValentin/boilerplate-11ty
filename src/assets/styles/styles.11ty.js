@@ -52,8 +52,6 @@ module.exports = class {
     }
 
     // display an error overlay when CSS build fails.
-    // this brilliant idea is taken from Mike Riethmuller / Supermaya
-    // @see https://github.com/MadeByMike/supermaya/blob/master/site/utils/compile-scss.js
     renderError(error) {
         return `
         /* Error compiling stylesheet */

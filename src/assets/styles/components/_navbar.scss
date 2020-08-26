@@ -1,0 +1,17 @@
+.nav {
+  background: $black;
+
+  &__list {
+    display: flex;
+  }
+
+	&__list-logo {
+    flex: 1;
+  }
+
+  &__list-item {
+    color: $white;
+    padding: 15px 20px;
+    font-size: 1.4rem;
+  }
+}

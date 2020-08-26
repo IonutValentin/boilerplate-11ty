@@ -1,0 +1,44 @@
+ /*** Media breakpoints ***/
+/*************************/
+
+$x-small: 320px;
+$small: 568px;
+$medium: 768px;
+$large: 992px;
+$x-large: 1200px;
+
+
+ /*** Colors ***/
+/**************/
+
+$base-color: #c6538c;
+$black: #000000;
+$white: #ffffff;
+
+
+ /*** Font-family ***/
+/*******************/
+
+$base-font: 'Calibri';
+
+
+ /*** Mixins ***/
+/**************/
+
+@mixin media-breakpoint-up($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content
+  }
+};
+  
+@mixin media-breakpoint-down($breakpoint) {
+	@media (max-width: $breakpoint) {
+    @content
+	}
+};
+  
+@mixin media-breakpoint-between($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content
+  }
+};

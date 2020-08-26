@@ -52,8 +52,6 @@ module.exports = class {
     }
 
     // Compile JS with Webpack, write the result to Memory Filesystem.
-    // this brilliant idea is taken from Mike Riethmuller / Supermaya
-    // @see https://github.com/MadeByMike/supermaya/blob/master/site/utils/compile-webpack.js
     compile(webpackConfig) {
         const compiler = webpack(webpackConfig)
         compiler.outputFileSystem = mfs
